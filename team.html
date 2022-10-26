@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/odometer.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <title>Webing | IT Solutions</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <meta name="description" content="Custom IT Solutions for Your Business. We are at your service with our reliable service understanding and professional team.">
+</head>
+
+<body style="background-image: url('images2/teambg.png')">
+    <div class="preloader">
+        <figure> <img src="img/loader.png" alt="Image"> </figure>
+    </div>
+    <div class="page-transition"></div>
+    <aside class="side-widget">
+        <div class="inner">
+            <!-- Logo Menu Mobile -->
+            <div class="logo"> <a href="index.html"><img src="img/logo.png" alt="Image"></a> </div>
+            <div class="hide-mobile">
+                <h6 class="widget-title">CONTACT INFO</h6>
+                <address class="address">
+                <p>+1 (234) 567 89 10<br>
+                  <a href="#">example@example.com</a></p>
+                </address>
+            </div>
+       
+    </aside>
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo Menu Desktop -->
+            <div class="logo"> <a href="index.html"><img src="img/logo.png" alt="Image"></a> </div>
+            <div class="site-menu">
+                <ul class="menu">
+
+                    <li><a href="index.html">Back to Home Page
+                    <span class="border border-top"></span>
+                    <span class="border border-right"></span>
+                    <span class="border border-bottom"></span>
+                    <span class="border border-left"></span> 
+                </ul>
+            </div>
+            <div class="hamburger-menu"> <span></span> <span></span> <span></span> </div>
+            
+        </div>
+    </nav>
+
+<br><br>
+   
+   
+
+  
+            <!-- NUMA METE BELOW -->
+        </div>
+        <div id="top" style="cursor: pointer;">
+            <img width="50" height="50" src="img/go-top.png" alt="" />
+        </div>
+        <script src="js/team.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/fancybox.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/odometer.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/3d.jquery.js"></script>
+        <script src="js/pointer.js"></script>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <!--Cursor Script-->
+        <script>
+            init_pointer({
+
+            })
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#btn_Gonder').click(function() {
+
+                    //alert("test");
+
+                    var isim = $('#txt_isim').val();
+                    var eposta = $('#txt_eposta').val();
+                    var telefon = $('#txt_telefon').val();
+                    var json_data = {};
+                    json_data.isim = isim;
+                    json_data.eposta = eposta;
+                    json_data.telefon = telefon;
+                    $.ajax({
+                        url: "form/Price-Form-Send.php",
+                        method: "post",
+                        data: json_data,
+                        success: function(response) {
+                            if (response == "Success") {
+                                alert("Mesajınız Gönderildi.");
+                            } else if (response == "Failed") {
+                                alert("Mesajınız Gönderilemedi. Lütfen Tekrar Deneyiniz.");
+                            }
+                            console.log(response);
+                            if (response.trim() == "Success") console.log("Success");
+                            else
+                                console.log("Failed :  " + response);
+                        }
+                    });
+                });
+            });
+        </script>
+     
+   
+     
+               
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
