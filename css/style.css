@@ -19,6 +19,30 @@
 */
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
+/* buttons */
+
+
+
+.responsive {
+  width: 100%;
+  height: auto;}
+
+.iframe-container{
+  position: relative;
+    height: 1000px;
+  width: 1000px;
+  padding-bottom: 30.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 .column {
   float: center;
   width: 33.33%;
@@ -11523,6 +11547,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
 /* LINKS */
 
 a {
@@ -11998,7 +12023,7 @@ button[type="submit"] i {
     width: 100%;
     display: flex;
     position: relative;
-    background: #0d0d0d;
+    background: black;
 }
 
 .tab-wrapper .tab-item .tab-inner ul {
@@ -12006,7 +12031,7 @@ button[type="submit"] i {
     height: 40vw;
     overflow: auto;
     float: left;
-    color: #fff;
+    color: black;
     margin: 40px;
     margin-left: 60px;
     padding: 0;
@@ -12023,7 +12048,7 @@ button[type="submit"] i {
 .tab-wrapper .tab-item .tab-inner ul li span {
     width: 100%;
     display: block;
-    color: #25aae2;
+    color: black;
 }
 
 .tab-wrapper .tab-item .tab-inner ul li h6 {
@@ -12056,7 +12081,7 @@ button[type="submit"] i {
     flex-wrap: wrap;
     padding: 40px;
     text-align: center;
-    background: #fff;
+    background: black;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
 }
 
@@ -12086,7 +12111,7 @@ button[type="submit"] i {
     font-size: 22px;
     margin-bottom: 0;
     margin-top: 20px;
-    color: #25aae2;
+    color: black;
     position: relative;
 }
 
@@ -12094,7 +12119,7 @@ button[type="submit"] i {
     content: "";
     width: 100px;
     height: 4px;
-    background: #25aae2;
+    background: black;
     position: absolute;
     left: calc(50% - 50px);
     bottom: -40px;
@@ -15147,7 +15172,7 @@ button[type="submit"] i {
     z-index: 6;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.4);
     padding: 20px 30px;
-    color: #fff;
+    color: black;
 }
 
 .side-widget .inner {
@@ -15191,7 +15216,7 @@ button[type="submit"] i {
 .side-widget p {
     width: 100%;
     display: block;
-    color: #fff;
+    color: black;
 }
 
 .side-widget .widget-title {
@@ -15199,7 +15224,7 @@ button[type="submit"] i {
     display: block;
     margin-bottom: 10px;
     font-size: 18px;
-    color: #0C5ADB;
+    color: black;
 }
 
 .side-widget .address {
@@ -15210,7 +15235,7 @@ button[type="submit"] i {
 
 .side-widget .address a {
     display: inline-block;
-    color: #fff;
+    color: black;
     text-decoration: underline;
 }
 
@@ -15233,13 +15258,13 @@ button[type="submit"] i {
 }
 
 .side-widget .social-media li a {
-    color: #fff;
+    color: black;
     font-size: 13px;
     font-weight: 600;
 }
 
 .side-widget .social-media li a:hover {
-    color: #0C5ADB;
+    color: black;
 }
 
 .side-widget .custom-menu {
@@ -15271,14 +15296,14 @@ button[type="submit"] i {
 }
 
 .side-widget .custom-menu ul li a {
-    color: #fff;
+    color: black;
     font-size: 18px;
     font-weight: 600;
 }
 
 .side-widget .custom-menu ul li a:hover {
     text-decoration: none;
-    color: #000b1f;
+    color: black;
 }
 
 .side-widget .site-menu {
